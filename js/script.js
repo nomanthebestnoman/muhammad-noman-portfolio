@@ -322,21 +322,37 @@ function initSkillBars() {
   const skillBars = document.querySelectorAll('.skill-fill');
   if (!skillBars.length) return;
 
+  function triggerFill(bar) {
+    const percentage = bar.getAttribute('data-percent') || '85%';
+    bar.style.width = percentage;
+  }
+
+  if (!('IntersectionObserver' in window)) {
+    skillBars.forEach(triggerFill);
+    return;
+  }
+
   const observer = new IntersectionObserver(
     (entries, obs) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          const bar = entry.target;
-          const percentage = bar.getAttribute('data-percent') || '85%';
-          bar.style.width = percentage;
-          obs.unobserve(bar);
+          triggerFill(entry.target);
+          obs.unobserve(entry.target);
         }
       });
     },
-    { threshold: 0.3 }
+    { threshold: 0.1 }
   );
 
-  skillBars.forEach(bar => observer.observe(bar));
+  skillBars.forEach(bar => {
+    // Check if already in viewport
+    const rect = bar.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+      triggerFill(bar);
+    } else {
+      observer.observe(bar);
+    }
+  });
 }
 
 /* --------------------------------------------------------------------------

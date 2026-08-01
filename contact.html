@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me — Muhammad Noman | AI Web Developer</title>
+  
+  <meta name="description" content="Get in touch with Muhammad Noman for freelance projects, AI web development contracts, UI design inquiries, or full-time opportunities.">
+  <meta name="keywords" content="Contact Muhammad Noman, Hire AI Web Developer, Freelance UI Designer, Project Inquiry">
+  <meta name="author" content="Muhammad Noman">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Background Canvas & Orbs -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+
+  <!-- Unified Sticky Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-badge">MN</div>
+        <div class="logo-text">Muhammad <span>Noman</span></div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm resume-btn">
+          <i class="fas fa-file-download"></i> Resume
+        </button>
+        <button class="hamburger" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer & Overlay -->
+  <div class="mobile-overlay"></div>
+  <aside class="mobile-drawer">
+    <ul class="mobile-nav-menu">
+      <li><a href="index.html" class="mobile-nav-link"><i class="fas fa-home me-2"></i> Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link"><i class="fas fa-user me-2"></i> About</a></li>
+      <li><a href="projects.html" class="mobile-nav-link"><i class="fas fa-code me-2"></i> Projects</a></li>
+      <li><a href="services.html" class="mobile-nav-link"><i class="fas fa-cog me-2"></i> Services</a></li>
+      <li><a href="contact.html" class="mobile-nav-link active"><i class="fas fa-paper-plane me-2"></i> Contact</a></li>
+    </ul>
+    <button class="btn btn-primary resume-btn w-full mt-4">
+      <i class="fas fa-file-download"></i> Download Resume
+    </button>
+  </aside>
+
+  <!-- Page Hero Banner -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="sub-badge"><i class="fas fa-envelope-open"></i> Let's Connect</span>
+      <h1 class="section-title">Get in <span class="text-gradient">Touch</span></h1>
+      <p class="section-subtitle">Have a project proposal, technical question, or freelance inquiry? Send me a message below!</p>
+    </div>
+  </section>
+
+  <!-- Contact Details & Form Section -->
+  <section class="contact-section" style="padding-top: 1rem;">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <!-- Contact Information Column -->
+        <div class="contact-info reveal">
+          <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+            <span class="sub-badge"><i class="fas fa-address-book"></i> Reach Out</span>
+            <h2 style="font-size: 2rem;">Contact <span class="text-gradient">Information</span></h2>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">Feel free to reach out via email, phone, or direct social message.</p>
+          </div>
+
+          <!-- Contact Info Cards -->
+          <div class="contact-info-card glass-card">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h4 style="font-size: 1.05rem; font-weight: 700;">Phone / WhatsApp</h4>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">+92 300 1234567</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card glass-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4 style="font-size: 1.05rem; font-weight: 700;">Email Address</h4>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">nomanthebestnoman6@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card glass-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4 style="font-size: 1.05rem; font-weight: 700;">Location & Timezone</h4>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">Islamabad, Pakistan (UTC+5) — Remote Worldwide</p>
+            </div>
+          </div>
+
+          <!-- Business Hours -->
+          <div class="glass-card" style="padding: 1.5rem; margin-top: 1.5rem;">
+            <h4 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 0.8rem;"><i class="fas fa-clock"></i> Working Hours</h4>
+            <ul style="list-style: none; font-size: 0.9rem; color: var(--text-muted); line-height: 1.8;">
+              <li style="display: flex; justify-content: space-between;"><span>Monday — Friday:</span> <span style="color: var(--text-main);">09:00 AM – 07:00 PM</span></li>
+              <li style="display: flex; justify-content: space-between;"><span>Saturday:</span> <span style="color: var(--text-main);">10:00 AM – 04:00 PM</span></li>
+              <li style="display: flex; justify-content: space-between;"><span>Sunday:</span> <span style="color: var(--primary);">Available for Emergencies</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form Column -->
+        <div class="contact-form-wrapper reveal">
+          <form id="contact-form" class="contact-form glass-card">
+            <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Send a Message</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.8rem;">I usually respond within 2 to 4 hours.</p>
+
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name <span style="color: var(--primary);">*</span></label>
+              <input type="text" id="name" class="form-input" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address <span style="color: var(--primary);">*</span></label>
+              <input type="email" id="email" class="form-input" placeholder="e.g. john@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number (Optional)</label>
+              <input type="tel" id="phone" class="form-input" placeholder="e.g. +1 (555) 000-0000">
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject / Service Needed</label>
+              <input type="text" id="subject" class="form-input" placeholder="e.g. AI Web Application Inquiry">
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Project Details / Message <span style="color: var(--primary);">*</span></label>
+              <textarea id="message" class="form-input" rows="5" placeholder="Describe your project goals, budget, or timeline..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-full" style="width: 100%; justify-content: center;">
+              <i class="fas fa-paper-plane"></i> Send Message Now
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Newsletter & Location Map Grid -->
+      <div style="margin-top: 4rem;">
+        <div class="section-header reveal">
+          <span class="sub-badge"><i class="fas fa-globe-asia"></i> Location & Newsletter</span>
+          <h2 class="section-title">Stay Connected & <span class="text-gradient">Location</span></h2>
+        </div>
+
+        <div class="projects-grid" style="grid-template-columns: 1.2fr 0.8fr;">
+          <!-- Map Wrapper -->
+          <div class="map-wrapper reveal" style="margin-top: 0; height: 320px;">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212444.64654519992!2d72.93724816823906!3d33.61603099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6059515c3bdb02b6!2sIslamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Muhammad Noman Location Map">
+            </iframe>
+          </div>
+
+          <!-- Newsletter Card -->
+          <div class="glass-card reveal" style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: center;">
+            <div class="badge-icon" style="margin-bottom: 1rem;"><i class="fas fa-newspaper"></i></div>
+            <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Newsletter Subscription</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Subscribe to receive tech updates, AI web design trends, and free developer tools.</p>
+            
+            <form onsubmit="event.preventDefault(); showToast('Subscribed to Muhammad Noman\'s newsletter!', 'success'); this.reset();" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <input type="email" class="form-input" placeholder="Your email address" required style="flex: 1; min-width: 180px;">
+              <button type="submit" class="btn btn-primary"><i class="fas fa-bell"></i> Join</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Modal -->
+  <div class="modal-overlay" id="resume-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close"><i class="fas fa-times"></i></button>
+      <div class="text-center" style="text-align: center; margin-bottom: 1.5rem;">
+        <span class="sub-badge"><i class="fas fa-file-pdf"></i> Resume Preview</span>
+        <h3 style="font-size: 1.8rem; margin-top: 0.5rem;">Muhammad Noman - Resume</h3>
+      </div>
+      <div style="display: flex; gap: 1rem; justify-content: center;">
+        <a href="images/profile.png" download="Muhammad_Noman_Resume.png" class="btn btn-primary w-full">
+          <i class="fas fa-download"></i> Download Resume PDF
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <button id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-badge">MN</div>
+            <div class="logo-text">Muhammad <span>Noman</span></div>
+          </a>
+          <p>AI Web Developer & UI Designer turning visionary software concepts into real-world applications.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">AI Web Apps</a></li>
+            <li><a href="services.html">Frontend Design</a></li>
+            <li><a href="services.html">E-Commerce</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>nomanthebestnoman6@gmail.com</li>
+            <li>+92 300 1234567</li>
+            <li>Islamabad, Pakistan</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Muhammad Noman. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

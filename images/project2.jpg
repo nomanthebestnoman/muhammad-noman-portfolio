@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p2Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#050816"/>
+    </linearGradient>
+    <linearGradient id="p2Accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#p2Bg)"/>
+
+  <!-- E-Commerce Store Front Mockup -->
+  <rect x="60" y="40" width="680" height="420" rx="16" fill="rgba(11, 17, 32, 0.95)" stroke="rgba(139, 92, 246, 0.3)" stroke-width="2"/>
+  
+  <!-- Store Navigation Header -->
+  <rect x="60" y="40" width="680" height="55" rx="16" fill="rgba(19, 27, 46, 0.9)"/>
+  <text x="100" y="75" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="20" fill="#8b5cf6">NEXUS <tspan fill="#ffffff">STORE</tspan></text>
+  <rect x="580" y="58" width="120" height="30" rx="15" fill="rgba(0,229,255,0.15)" stroke="#00e5ff" stroke-width="1"/>
+  <text x="640" y="78" font-family="'Poppins', sans-serif" font-weight="600" font-size="12" fill="#00e5ff" text-anchor="middle">🛒 Cart (3)</text>
+
+  <!-- Product Cards Grid -->
+  <g transform="translate(90, 120)">
+    <!-- Product 1 -->
+    <rect width="180" height="230" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)"/>
+    <rect x="15" y="15" width="150" height="110" rx="8" fill="rgba(139, 92, 246, 0.2)"/>
+    <text x="90" y="80" font-family="'Space Grotesk', sans-serif" font-size="32" text-anchor="middle">👟</text>
+    <text x="15" y="150" font-family="'Poppins', sans-serif" font-weight="600" font-size="13" fill="#ffffff">Cyber Sneaker V2</text>
+    <text x="15" y="175" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="16" fill="#00e5ff">$249.00</text>
+    <rect x="15" y="190" width="150" height="26" rx="13" fill="url(#p2Accent)"/>
+    <text x="90" y="207" font-family="'Poppins', sans-serif" font-weight="700" font-size="11" fill="#050816" text-anchor="middle">Add to Cart</text>
+
+    <!-- Product 2 -->
+    <g transform="translate(210, 0)">
+      <rect width="180" height="230" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(0, 229, 255, 0.3)"/>
+      <rect x="15" y="15" width="150" height="110" rx="8" fill="rgba(0, 229, 255, 0.2)"/>
+      <text x="90" y="80" font-family="'Space Grotesk', sans-serif" font-size="32" text-anchor="middle">🎧</text>
+      <text x="15" y="150" font-family="'Poppins', sans-serif" font-weight="600" font-size="13" fill="#ffffff">Neon Headphones</text>
+      <text x="15" y="175" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="16" fill="#00e5ff">$189.00</text>
+      <rect x="15" y="190" width="150" height="26" rx="13" fill="url(#p2Accent)"/>
+      <text x="90" y="207" font-family="'Poppins', sans-serif" font-weight="700" font-size="11" fill="#050816" text-anchor="middle">Add to Cart</text>
+    </g>
+
+    <!-- Product 3 -->
+    <g transform="translate(420, 0)">
+      <rect width="180" height="230" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)"/>
+      <rect x="15" y="15" width="150" height="110" rx="8" fill="rgba(34, 211, 238, 0.2)"/>
+      <text x="90" y="80" font-family="'Space Grotesk', sans-serif" font-size="32" text-anchor="middle">⌚</text>
+      <text x="15" y="150" font-family="'Poppins', sans-serif" font-weight="600" font-size="13" fill="#ffffff">Quantum Watch</text>
+      <text x="15" y="175" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="16" fill="#00e5ff">$399.00</text>
+      <rect x="15" y="190" width="150" height="26" rx="13" fill="url(#p2Accent)"/>
+      <text x="90" y="207" font-family="'Poppins', sans-serif" font-weight="700" font-size="11" fill="#050816" text-anchor="middle">Add to Cart</text>
+    </g>
+  </g>
+
+  <!-- Footer Tag -->
+  <text x="400" y="420" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="14" fill="#8b5cf6" text-anchor="middle">🛍️ NEXT.JS 14 • TAILWIND CSS • STRIPE PAYMENTS</text>
+</svg>

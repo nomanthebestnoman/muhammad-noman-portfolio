@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p1Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050816"/>
+      <stop offset="100%" stop-color="#0e172a"/>
+    </linearGradient>
+    <linearGradient id="p1Glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <pattern id="gridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(0, 229, 255, 0.08)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#p1Bg)"/>
+  <rect width="800" height="500" fill="url(#gridPattern)"/>
+
+  <!-- Glowing Dashboard Mockup Window -->
+  <rect x="50" y="40" width="700" height="420" rx="16" fill="rgba(11, 17, 32, 0.9)" stroke="rgba(0, 229, 255, 0.3)" stroke-width="2"/>
+  
+  <!-- Window Title Bar -->
+  <rect x="50" y="40" width="700" height="45" rx="16" fill="rgba(19, 27, 46, 0.9)"/>
+  <circle cx="80" cy="62" r="6" fill="#ff5f56"/>
+  <circle cx="100" cy="62" r="6" fill="#ffbd2e"/>
+  <circle cx="120" cy="62" r="6" fill="#27c93f"/>
+  <text x="400" y="67" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="14" fill="#00e5ff" text-anchor="middle">CyberPulse AI Predictive Analytics SaaS</text>
+
+  <!-- Dashboard Metrics Cards -->
+  <rect x="80" y="110" width="200" height="90" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(0, 229, 255, 0.2)" stroke-width="1"/>
+  <text x="100" y="138" font-family="'Poppins', sans-serif" font-size="12" fill="#94a3b8">AI Sentiment Index</text>
+  <text x="100" y="175" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="28" fill="#00e5ff">98.4%</text>
+
+  <rect x="300" y="110" width="200" height="90" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(139, 92, 246, 0.2)" stroke-width="1"/>
+  <text x="320" y="138" font-family="'Poppins', sans-serif" font-size="12" fill="#94a3b8">Real-Time Revenue</text>
+  <text x="320" y="175" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="28" fill="#8b5cf6">$142,850</text>
+
+  <rect x="520" y="110" width="200" height="90" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(34, 211, 238, 0.2)" stroke-width="1"/>
+  <text x="540" y="138" font-family="'Poppins', sans-serif" font-size="12" fill="#94a3b8">Gemini AI Queries</text>
+  <text x="540" y="175" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="28" fill="#22d3ee">1.2M+</text>
+
+  <!-- Animated Analytics Graph Curve -->
+  <path d="M 90 380 Q 200 240, 320 320 T 520 220 T 710 180" fill="none" stroke="url(#p1Glow)" stroke-width="4"/>
+  <path d="M 90 380 Q 200 240, 320 320 T 520 220 T 710 180 L 710 420 L 90 420 Z" fill="url(#p1Glow)" opacity="0.15"/>
+
+  <!-- Graph Nodes -->
+  <circle cx="320" cy="320" r="6" fill="#00e5ff"/>
+  <circle cx="520" cy="220" r="6" fill="#8b5cf6"/>
+  <circle cx="710" cy="180" r="8" fill="#00e5ff"/>
+
+  <!-- Floating Tech Pill Overlay -->
+  <rect x="250" y="400" width="300" height="36" rx="18" fill="#050816" stroke="#00e5ff" stroke-width="1.5"/>
+  <text x="400" y="423" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="#ffffff" text-anchor="middle">🤖 POWERED BY GEMINI AI &amp; REACT</text>
+</svg>

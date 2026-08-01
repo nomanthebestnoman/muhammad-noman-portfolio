@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Pricing — Muhammad Noman | AI Web Developer</title>
+  
+  <meta name="description" content="Explore professional services by Muhammad Noman: AI Web Development, Frontend Engineering, UI/UX Design, E-Commerce, Dashboard UI, and Website Optimization.">
+  <meta name="keywords" content="Muhammad Noman Services, Web Design Pricing, AI Web Development, Freelance Frontend Developer, UI Design Packages">
+  <meta name="author" content="Muhammad Noman">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Background Canvas & Orbs -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+
+  <!-- Unified Sticky Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-badge">MN</div>
+        <div class="logo-text">Muhammad <span>Noman</span></div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm resume-btn">
+          <i class="fas fa-file-download"></i> Resume
+        </button>
+        <button class="hamburger" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer & Overlay -->
+  <div class="mobile-overlay"></div>
+  <aside class="mobile-drawer">
+    <ul class="mobile-nav-menu">
+      <li><a href="index.html" class="mobile-nav-link"><i class="fas fa-home me-2"></i> Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link"><i class="fas fa-user me-2"></i> About</a></li>
+      <li><a href="projects.html" class="mobile-nav-link"><i class="fas fa-code me-2"></i> Projects</a></li>
+      <li><a href="services.html" class="mobile-nav-link active"><i class="fas fa-cog me-2"></i> Services</a></li>
+      <li><a href="contact.html" class="mobile-nav-link"><i class="fas fa-paper-plane me-2"></i> Contact</a></li>
+    </ul>
+    <button class="btn btn-primary resume-btn w-full mt-4">
+      <i class="fas fa-file-download"></i> Download Resume
+    </button>
+  </aside>
+
+  <!-- Page Hero Banner -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="sub-badge"><i class="fas fa-layer-group"></i> Professional Solutions</span>
+      <h1 class="section-title">Services & <span class="text-gradient">Pricing Plans</span></h1>
+      <p class="section-subtitle">High-impact web development, AI API integrations, and pixel-perfect UI designs tailored to your business goals.</p>
+    </div>
+  </section>
+
+  <!-- 12 Services Grid Section -->
+  <section class="services-section" style="padding-top: 1rem;">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="sub-badge"><i class="fas fa-concierge-bell"></i> What I Offer</span>
+        <h2 class="section-title">Comprehensive <span class="text-gradient">Services</span></h2>
+        <p class="section-subtitle">Tailored digital services for startups, established brands, and individuals.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card glass-card reveal">
+          <div class="service-icon-box"><i class="fas fa-paint-brush"></i></div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.6rem;">Website Design</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Modern, aesthetic dark & light website designs with glassmorphic cards, custom typography, and fluid layouts.</p>
+          <div class="service-price">Starting from $399</div>
+          <a href="contact.html" class="btn btn-secondary btn-sm mt-3 w-full" style="margin-top: 1rem;"><i class="fas fa-arrow-right"></i> Order Service</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card glass-card reveal">
+          <div class="service-icon-box"><i class="fas fa-code"></i></div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.6rem;">Frontend Development</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Clean, modular React, Next.js, and TypeScript frontend development with smooth animations and zero layout shifts.</p>
+          <div class="service-price">Starting from $499</div>
+          <a href="contact.html" class="btn btn-secondary btn-sm mt-3 w-full" style="margin-top: 1rem;"><i class="fas fa-arrow-right"></i> Order Service</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card glass-card reveal">
+          <div class="service-icon-box"><i class="fas fa-rocket"></i></div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.6rem;">Landing Pages</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">High-converting marketing landing pages engineered for fast load speeds, SEO performance, and maximum signups.</p>
+          <div class="service-price">Starting from $299</div>
+          <a href="contact.html" class="btn btn-secondary btn-sm mt-3 w-full" style="margin-top: 1rem;"><i class="fas fa-arrow-right"></i> Order Service</a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card glass-card reveal">
+          <div class="service-icon-box"><i class="fas fa-id-card"></i></div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.6rem;">Portfolio Websites</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Personal and agency portfolio websites with animated particle canvas backgrounds, interactive resume previews, and contact forms.</p>
+          <div class="service-price">Starting from $249</div>
+          <a href="contact.html" class="btn btn-secondary btn-sm mt-3 w-full" style="margin-top: 1rem;"><i class="fas fa-arrow-right"></i> Order Service</a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card glass-card reveal">
+          <div class="service-icon-box"><i class="fas fa-shopping-bag"></i></div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.6rem;">E-Commerce Websites</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Full-featured online stores with cart drawers, product search filtering, inventory badges, and Stripe/PayPal checkout.</p>
+          <div class="service-price">Starting from $699</div>
+          <a href="contact.html" class="btn btn-secondary btn-sm mt-3 w-full" style="margin-top: 1rem;"><i class="fas fa-arrow-right"></i> Order Service</a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card glass-card reveal">
+          <div class="service-icon-box"><i class="fas fa-chart-line"></i></div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.6rem;">Dashboard UI</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Interactive admin dashboards with real-time data visualizers, Chart.js metrics, user tables, and dark mode controls.</p>
+          <div class="service-price">Starting from $599</div>
+          <a href="contact.html" class="btn btn-secondary btn-sm mt-3 w-full" style="margin-top: 1rem;"><i class="fas fa-arrow-right"></i> Order Service</a>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="service-card glass-card reveal">
+          <div class="service-icon-box"><i class="fas fa-mobile-alt"></i></div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.6rem;">Responsive Design</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Adapting existing legacy websites into 100% fluid, mobile-first responsive layouts for mobile, tablet, and desktop.</p>
+          <div class="service-price">Starting from $199</div>
+          <a href="contact.html" class="btn btn-secondary btn-sm mt-3 w-full" style="margin-top: 1rem;"><i class="fas fa-arrow-right"></i> Order Service</a>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="service-card glass-card reveal">
+          <div class="service-icon-box"><i class="fas fa-vector-square"></i></div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.6rem;">UI/UX Design Systems</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Figma component libraries, wireframes, visual design systems, user journeys, and interactive clickable prototypes.</p>
+          <div class="service-price">Starting from $349</div>
+          <a href="contact.html" class="btn btn-secondary btn-sm mt-3 w-full" style="margin-top: 1rem;"><i class="fas fa-arrow-right"></i> Order Service</a>
+        </div>
+
+        <!-- Service 9 -->
+        <div class="service-card glass-card reveal">
+          <div class="service-icon-box"><i class="fas fa-brain"></i></div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.6rem;">AI Website Development</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Integrating Gemini AI models into web platforms for automated chat assistants, text generators, and image generation tools.</p>
+          <div class="service-price">Starting from $799</div>
+          <a href="contact.html" class="btn btn-secondary btn-sm mt-3 w-full" style="margin-top: 1rem;"><i class="fas fa-arrow-right"></i> Order Service</a>
+        </div>
+
+        <!-- Service 10 -->
+        <div class="service-card glass-card reveal">
+          <div class="service-icon-box"><i class="fas fa-bug"></i></div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.6rem;">Bug Fixing & Audit</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Diagnostic code review, fixing broken JavaScript handlers, CSS overflow bugs, cross-browser errors, and layout glitches.</p>
+          <div class="service-price">Starting from $99</div>
+          <a href="contact.html" class="btn btn-secondary btn-sm mt-3 w-full" style="margin-top: 1rem;"><i class="fas fa-arrow-right"></i> Order Service</a>
+        </div>
+
+        <!-- Service 11 -->
+        <div class="service-card glass-card reveal">
+          <div class="service-icon-box"><i class="fas fa-tachometer-alt"></i></div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.6rem;">Website Optimization</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Accelerating website speeds to achieve 95+ Google PageSpeed Core Web Vitals scores with code minification and asset compression.</p>
+          <div class="service-price">Starting from $149</div>
+          <a href="contact.html" class="btn btn-secondary btn-sm mt-3 w-full" style="margin-top: 1rem;"><i class="fas fa-arrow-right"></i> Order Service</a>
+        </div>
+
+        <!-- Service 12 -->
+        <div class="service-card glass-card reveal">
+          <div class="service-icon-box"><i class="fas fa-search"></i></div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.6rem;">SEO Ready Development</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Semantic HTML5 structure, Open Graph tags, JSON-LD structured data schema, sitemaps, and search engine optimization.</p>
+          <div class="service-price">Starting from $199</div>
+          <a href="contact.html" class="btn btn-secondary btn-sm mt-3 w-full" style="margin-top: 1rem;"><i class="fas fa-arrow-right"></i> Order Service</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transparent Pricing Table Section -->
+  <section class="pricing-section" style="padding: 5rem 0;">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="sub-badge"><i class="fas fa-tags"></i> Transparent Rates</span>
+        <h2 class="section-title">Pricing <span class="text-gradient">Packages</span></h2>
+        <p class="section-subtitle">Choose a package that fits your project scope and launch timeline.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Basic Plan -->
+        <div class="pricing-card glass-card reveal">
+          <h3 style="font-size: 1.4rem;">Basic Plan</h3>
+          <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.3rem;">Ideal for landing pages & small sites</p>
+          <div class="pricing-amount">$299</div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Single Page / Landing Page</li>
+            <li><i class="fas fa-check"></i> 100% Mobile Responsive</li>
+            <li><i class="fas fa-check"></i> Contact Form Integration</li>
+            <li><i class="fas fa-check"></i> Speed & Basic SEO Setup</li>
+            <li style="opacity: 0.4;"><i class="fas fa-times"></i> AI API Integrations</li>
+            <li style="opacity: 0.4;"><i class="fas fa-times"></i> CMS / Database Support</li>
+          </ul>
+          <a href="contact.html" class="btn btn-secondary w-full">Select Basic</a>
+        </div>
+
+        <!-- Standard Plan (Popular) -->
+        <div class="pricing-card glass-card popular reveal">
+          <div class="popular-badge">Most Popular</div>
+          <h3 style="font-size: 1.4rem;">Standard Plan</h3>
+          <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.3rem;">Perfect for business & portfolio sites</p>
+          <div class="pricing-amount">$599</div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Up to 5 Custom Pages</li>
+            <li><i class="fas fa-check"></i> Modern Glassmorphic Dark UI</li>
+            <li><i class="fas fa-check"></i> Animated Particle Background</li>
+            <li><i class="fas fa-check"></i> Advanced Interactive JS Features</li>
+            <li><i class="fas fa-check"></i> Full SEO & Analytics Setup</li>
+            <li><i class="fas fa-check"></i> 3 Weeks Support</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary w-full">Select Standard</a>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="pricing-card glass-card reveal">
+          <h3 style="font-size: 1.4rem;">Premium Plan</h3>
+          <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.3rem;">For AI Web Apps & E-Commerce</p>
+          <div class="pricing-amount">$999</div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Unlimited Custom Pages</li>
+            <li><i class="fas fa-check"></i> AI Gemini API Integrations</li>
+            <li><i class="fas fa-check"></i> Database & Authentication</li>
+            <li><i class="fas fa-check"></i> E-Commerce & Payment Gateway</li>
+            <li><i class="fas fa-check"></i> Priority Performance Audit</li>
+            <li><i class="fas fa-check"></i> 2 Months Free Support</li>
+          </ul>
+          <a href="contact.html" class="btn btn-secondary w-full">Select Premium</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion Section -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="sub-badge"><i class="fas fa-question-circle"></i> Got Questions?</span>
+        <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+        <p class="section-subtitle">Everything you need to know about working with Muhammad Noman.</p>
+      </div>
+
+      <div class="faq-container reveal">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What is your typical project delivery timeline?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>For standard landing pages or portfolio websites, delivery typically takes 3 to 5 business days. Complex multi-page platforms, AI web applications, or custom e-commerce stores take 2 to 4 weeks depending on exact requirements.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Will my website be 100% responsive on all mobile devices?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely! Every website I develop is built mobile-first and tested meticulously across desktop computers, laptops, iPads, Android tablets, and smartphones to ensure flawless layout performance.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can you integrate Google Gemini AI or custom API tools into my app?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! As an AI Web Developer, I specialize in connecting frontend web apps with Gemini API pipelines for intelligent text summaries, chat assistance, content generation, and image processing tools.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can you deploy my website directly to Vercel or GitHub Pages?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, all project files are production-ready and can be directly deployed to Vercel, Netlify, Cloud Run, or custom servers with automated CI/CD deployment setups included.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you offer post-launch maintenance and support?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! Every project package includes complimentary post-launch support ranging from 3 weeks to 2 months to ensure everything operates smoothly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Modal -->
+  <div class="modal-overlay" id="resume-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close"><i class="fas fa-times"></i></button>
+      <div class="text-center" style="text-align: center; margin-bottom: 1.5rem;">
+        <span class="sub-badge"><i class="fas fa-file-pdf"></i> Resume Preview</span>
+        <h3 style="font-size: 1.8rem; margin-top: 0.5rem;">Muhammad Noman - Resume</h3>
+      </div>
+      <div style="display: flex; gap: 1rem; justify-content: center;">
+        <a href="images/profile.png" download="Muhammad_Noman_Resume.png" class="btn btn-primary w-full">
+          <i class="fas fa-download"></i> Download Resume PDF
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <button id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-badge">MN</div>
+            <div class="logo-text">Muhammad <span>Noman</span></div>
+          </a>
+          <p>AI Web Developer & UI Designer turning visionary software concepts into real-world applications.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">AI Web Apps</a></li>
+            <li><a href="services.html">Frontend Design</a></li>
+            <li><a href="services.html">E-Commerce</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>noman@example.com</li>
+            <li>+92 300 1234567</li>
+            <li>Islamabad, Pakistan</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Muhammad Noman. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me — Muhammad Noman | AI Web Developer & UI Designer</title>
+  
+  <meta name="description" content="Learn more about Muhammad Noman, his career timeline, technical skill stack, certifications, and core vision as a Senior AI Web Developer & UI Designer.">
+  <meta name="keywords" content="Muhammad Noman About, Career Timeline, Full-Stack Developer Skills, Certifications, AI Web Developer">
+  <meta name="author" content="Muhammad Noman">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Background Canvas & Orbs -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+
+  <!-- Unified Sticky Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-badge">MN</div>
+        <div class="logo-text">Muhammad <span>Noman</span></div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm resume-btn">
+          <i class="fas fa-file-download"></i> Resume
+        </button>
+        <button class="hamburger" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer & Overlay -->
+  <div class="mobile-overlay"></div>
+  <aside class="mobile-drawer">
+    <ul class="mobile-nav-menu">
+      <li><a href="index.html" class="mobile-nav-link"><i class="fas fa-home me-2"></i> Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link active"><i class="fas fa-user me-2"></i> About</a></li>
+      <li><a href="projects.html" class="mobile-nav-link"><i class="fas fa-code me-2"></i> Projects</a></li>
+      <li><a href="services.html" class="mobile-nav-link"><i class="fas fa-cog me-2"></i> Services</a></li>
+      <li><a href="contact.html" class="mobile-nav-link"><i class="fas fa-paper-plane me-2"></i> Contact</a></li>
+    </ul>
+    <button class="btn btn-primary resume-btn w-full mt-4">
+      <i class="fas fa-file-download"></i> Download Resume
+    </button>
+  </aside>
+
+  <!-- About Hero Banner -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="sub-badge"><i class="fas fa-user-circle"></i> Discover My Story</span>
+      <h1 class="section-title">About <span class="text-gradient">Muhammad Noman</span></h1>
+      <p class="section-subtitle">Passionate Engineer, Creative Designer & AI Innovation Enthusiast.</p>
+    </div>
+  </section>
+
+  <!-- Professional Bio & Grid -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal">
+          <img src="images/about.jpg" alt="Muhammad Noman Profile" class="about-img">
+        </div>
+
+        <div class="about-bio reveal">
+          <span class="sub-badge"><i class="fas fa-lightbulb"></i> My Background</span>
+          <h3>Turning Visionary Ideas into <span class="text-gradient">High-Performance Web Solutions</span></h3>
+          <p>
+            Hello! I'm <strong>Muhammad Noman</strong>, an AI Web Developer and UI Designer with over 4 years of hands-on experience in full-stack web development. I specialize in crafting ultra-responsive web applications, modern dark-themed glassmorphism interfaces, and AI-driven platforms.
+          </p>
+          <p>
+            My journey began with a deep curiosity for computer science, clean typography, and interactive web architecture. Today, I combine aesthetic design principles with modern frameworks like React, Next.js, TypeScript, Tailwind CSS, and AI APIs to build software that scales gracefully and delights users.
+          </p>
+          
+          <div class="hero-buttons" style="margin-top: 2rem;">
+            <button class="btn btn-primary resume-btn">
+              <i class="fas fa-file-download"></i> Download Full CV
+            </button>
+            <a href="contact.html" class="btn btn-secondary">
+              <i class="fas fa-handshake"></i> Work Together
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission, Vision & Values Cards -->
+  <section class="values-section" style="padding: 4rem 0;">
+    <div class="container">
+      <div class="projects-grid">
+        <div class="glass-card reveal" style="padding: 2.5rem;">
+          <div class="badge-icon" style="margin-bottom: 1.5rem; width: 50px; height: 50px; font-size: 1.5rem;"><i class="fas fa-bullseye"></i></div>
+          <h3 style="font-size: 1.4rem; margin-bottom: 0.8rem;">My Mission</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            To empower businesses, startups, and agencies by building robust, visually striking, and accessible web experiences powered by modern frontend architectures and intelligent AI workflows.
+          </p>
+        </div>
+
+        <div class="glass-card reveal" style="padding: 2.5rem;">
+          <div class="badge-icon" style="margin-bottom: 1.5rem; width: 50px; height: 50px; font-size: 1.5rem; background: rgba(139,92,246,0.15); color: var(--secondary);"><i class="fas fa-eye"></i></div>
+          <h3 style="font-size: 1.4rem; margin-bottom: 0.8rem;">My Vision</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            To pioneer intuitive UI designs and seamless AI developer tools that redefine how people interact with digital products across web and cloud environments.
+          </p>
+        </div>
+
+        <div class="glass-card reveal" style="padding: 2.5rem;">
+          <div class="badge-icon" style="margin-bottom: 1.5rem; width: 50px; height: 50px; font-size: 1.5rem;"><i class="fas fa-gem"></i></div>
+          <h3 style="font-size: 1.4rem; margin-bottom: 0.8rem;">Core Values</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Pixel perfection, modular clean code, relentless curiosity, transparent collaboration, and a relentless focus on performance and search engine optimization.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career & Education Timeline -->
+  <section class="timeline-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="sub-badge"><i class="fas fa-history"></i> Career & Study</span>
+        <h2 class="section-title">My Journey & <span class="text-gradient">Timeline</span></h2>
+        <p class="section-subtitle">A chronological look at my academic foundation and professional growth.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2024 — PRESENT</span>
+            <h4 style="font-size: 1.25rem; font-weight: 700; color: var(--text-main);">Lead AI Web Developer</h4>
+            <p style="color: var(--primary); font-size: 0.9rem; margin-bottom: 0.5rem;">Nexus Innovation Labs</p>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Architecting custom AI web applications, generative text & image integration pipelines, and responsive glassmorphic React components.</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2022 — 2024</span>
+            <h4 style="font-size: 1.25rem; font-weight: 700; color: var(--text-main);">Senior Frontend Specialist</h4>
+            <p style="color: var(--primary); font-size: 0.9rem; margin-bottom: 0.5rem;">CyberCraft Digital Studio</p>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Built over 30 client projects using Next.js, Tailwind CSS, TypeScript, and state management libraries with 99.8% Lighthouse performance scores.</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2020 — 2022</span>
+            <h4 style="font-size: 1.25rem; font-weight: 700; color: var(--text-main);">UI/UX & Web Developer</h4>
+            <p style="color: var(--primary); font-size: 0.9rem; margin-bottom: 0.5rem;">Freelance & Agency Collaborations</p>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Designed user flows, wireframes, Figma prototypes, and responsive HTML/CSS/JS websites for global clients.</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 4 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2019 — 2023</span>
+            <h4 style="font-size: 1.25rem; font-weight: 700; color: var(--text-main);">B.S. in Computer Science</h4>
+            <p style="color: var(--primary); font-size: 0.9rem; margin-bottom: 0.5rem;">National University of Computer Sciences</p>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Graduated with Honors. Specialization in Web Technologies, Software Architecture, and Artificial Intelligence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Skills Section -->
+  <section class="skills-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="sub-badge"><i class="fas fa-tools"></i> Technical Expertise</span>
+        <h2 class="section-title">Skills & <span class="text-gradient">Technologies</span></h2>
+        <p class="section-subtitle">Proficiency levels across modern languages, frameworks, design tools, and AI stacks.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Column 1 -->
+        <div class="glass-card reveal" style="padding: 2rem;">
+          <h4 style="font-size: 1.2rem; color: var(--primary); margin-bottom: 1.5rem;"><i class="fas fa-code"></i> Frontend & AI Engineering</h4>
+          
+          <div class="skill-item">
+            <div class="skill-info"><span>React & Next.js</span><span>95%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="95%"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>JavaScript (ES6+) & TypeScript</span><span>92%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="92%"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>HTML5, CSS3 & Tailwind CSS</span><span>98%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="98%"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>AI Tools & Gemini API Integrations</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="90%"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>Node.js & Express</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="85%"></div></div>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="glass-card reveal" style="padding: 2rem;">
+          <h4 style="font-size: 1.2rem; color: var(--secondary); margin-bottom: 1.5rem;"><i class="fas fa-paint-brush"></i> UI/UX Design & Cloud Databases</h4>
+          
+          <div class="skill-item">
+            <div class="skill-info"><span>Figma UI/UX & Prototyping</span><span>94%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="94%"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>MongoDB & Firebase</span><span>88%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="88%"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>Git, GitHub & Vercel DevOps</span><span>95%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="95%"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>Adobe Illustrator & Photoshop</span><span>82%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="82%"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>Responsive & Accessibility Design</span><span>96%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="96%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications & Achievements -->
+  <section class="certifications-section" style="padding: 4rem 0;">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="sub-badge"><i class="fas fa-certificate"></i> Verified Badges</span>
+        <h2 class="section-title">Certifications & <span class="text-gradient">Awards</span></h2>
+      </div>
+
+      <div class="certifications-grid">
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fab fa-google"></i></div>
+          <div>
+            <h4 style="font-size: 1.1rem; font-weight: 700;">Google AI Web Developer</h4>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.2rem;">Issued by Google AI Studio (2024)</p>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon" style="color: var(--secondary);"><i class="fab fa-react"></i></div>
+          <div>
+            <h4 style="font-size: 1.1rem; font-weight: 700;">Meta Frontend Developer</h4>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.2rem;">Meta Professional Certification</p>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fab fa-figma"></i></div>
+          <div>
+            <h4 style="font-size: 1.1rem; font-weight: 700;">Figma UI/UX Specialist</h4>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.2rem;">Figma Academy Masterclass</p>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon" style="color: var(--accent);"><i class="fab fa-aws"></i></div>
+          <div>
+            <h4 style="font-size: 1.1rem; font-weight: 700;">AWS Certified Practitioner</h4>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.2rem;">Amazon Web Services</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Modal -->
+  <div class="modal-overlay" id="resume-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close"><i class="fas fa-times"></i></button>
+      <div class="text-center" style="text-align: center; margin-bottom: 1.5rem;">
+        <span class="sub-badge"><i class="fas fa-file-pdf"></i> Curriculum Vitae</span>
+        <h3 style="font-size: 1.8rem; margin-top: 0.5rem;">Muhammad Noman - Resume</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Senior AI Web Developer & UI Designer</p>
+      </div>
+      <div style="background: rgba(5,8,22,0.7); border: 1px solid var(--bg-glass-border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;">
+        <h4 style="color: var(--primary); margin-bottom: 0.8rem;"><i class="fas fa-check-circle"></i> Key Summary</h4>
+        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">
+          4+ Years experience in full-stack AI web apps, React, Next.js, TypeScript, Tailwind CSS, & UI/UX design. 50+ successful client deployments worldwide.
+        </p>
+      </div>
+      <div style="display: flex; gap: 1rem; justify-content: center;">
+        <a href="images/profile.png" download="Muhammad_Noman_Resume.png" class="btn btn-primary w-full">
+          <i class="fas fa-download"></i> Download Resume PDF
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <button id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-badge">MN</div>
+            <div class="logo-text">Muhammad <span>Noman</span></div>
+          </a>
+          <p>AI Web Developer & UI Designer turning visionary software concepts into real-world applications.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">AI Web Apps</a></li>
+            <li><a href="services.html">Frontend Design</a></li>
+            <li><a href="services.html">E-Commerce</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>noman@example.com</li>
+            <li>+92 300 1234567</li>
+            <li>Islamabad, Pakistan</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Muhammad Noman. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

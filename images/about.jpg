@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="abBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050816"/>
+      <stop offset="50%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#050816"/>
+    </linearGradient>
+    <linearGradient id="abGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="900" rx="30" fill="url(#abBg)"/>
+  
+  <!-- Outer Glow Frame -->
+  <rect x="40" y="40" width="720" height="820" rx="24" fill="rgba(11, 17, 32, 0.9)" stroke="url(#abGlow)" stroke-width="3"/>
+
+  <!-- Top Hexagon Avatar Shield -->
+  <polygon points="400,120 520,190 520,330 400,400 280,330 280,190" fill="rgba(19, 27, 46, 0.95)" stroke="url(#abGlow)" stroke-width="4"/>
+  <text x="400" y="270" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="90" fill="url(#abGlow)" text-anchor="middle">MN</text>
+
+  <!-- Name & Professional Subtitle -->
+  <text x="400" y="460" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="34" fill="#ffffff" text-anchor="middle">MUHAMMAD NOMAN</text>
+  <text x="400" y="495" font-family="'Poppins', sans-serif" font-weight="600" font-size="16" fill="#00e5ff" text-anchor="middle" letter-spacing="2">SENIOR AI WEB DEVELOPER &amp; UI DESIGNER</text>
+
+  <!-- Key Metrics Badges Grid -->
+  <g transform="translate(100, 540)">
+    <rect width="280" height="90" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(0, 229, 255, 0.3)"/>
+    <text x="140" y="38" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="28" fill="#00e5ff" text-anchor="middle">4+ Years</text>
+    <text x="140" y="65" font-family="'Poppins', sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">Full-Stack Experience</text>
+
+    <rect x="320" y="0" width="280" height="90" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(139, 92, 246, 0.3)"/>
+    <text x="460" y="38" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="28" fill="#8b5cf6" text-anchor="middle">50+ Projects</text>
+    <text x="460" y="65" font-family="'Poppins', sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">Successfully Delivered</text>
+  </g>
+
+  <!-- Tech Stack Chips -->
+  <g transform="translate(100, 670)">
+    <rect width="600" height="130" rx="16" fill="rgba(5, 8, 22, 0.8)" stroke="rgba(255,255,255,0.1)"/>
+    <text x="300" y="35" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="15" fill="#ffffff" text-anchor="middle">CORE TECHNOLOGIES &amp; SPECIALIZATIONS</text>
+    <text x="300" y="70" font-family="'Poppins', sans-serif" font-weight="500" font-size="14" fill="#00e5ff" text-anchor="middle">React • Next.js • TypeScript • Tailwind CSS • Node.js</text>
+    <text x="300" y="100" font-family="'Poppins', sans-serif" font-weight="500" font-size="14" fill="#8b5cf6" text-anchor="middle">Gemini AI API • Figma UI/UX • Chart.js • REST APIs</text>
+  </g>
+</svg>

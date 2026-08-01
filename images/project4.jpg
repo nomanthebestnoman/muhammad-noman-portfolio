@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p4Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050816"/>
+      <stop offset="100%" stop-color="#180e29"/>
+    </linearGradient>
+    <linearGradient id="p4Glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#p4Bg)"/>
+  <rect x="50" y="40" width="700" height="420" rx="20" fill="rgba(11, 17, 32, 0.95)" stroke="rgba(139, 92, 246, 0.4)" stroke-width="2"/>
+
+  <text x="400" y="100" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="28" fill="url(#p4Glow)" text-anchor="middle">AURA AI CREATIVE SUITE</text>
+  <text x="400" y="130" font-family="'Poppins', sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">Generative Content &amp; Multimodal Image Prompting Engine</text>
+
+  <rect x="100" y="160" width="600" height="180" rx="14" fill="rgba(255,255,255,0.02)" stroke="rgba(0,229,255,0.2)"/>
+  <text x="130" y="200" font-family="'Poppins', sans-serif" font-size="14" fill="#ffffff">✨ Prompt: "Futuristic neon city skyline with floating AI cars in cyan moonlight"</text>
+  
+  <rect x="130" y="230" width="160" height="80" rx="10" fill="rgba(0,229,255,0.15)"/>
+  <text x="210" y="275" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="18" fill="#00e5ff" text-anchor="middle">Output A</text>
+
+  <rect x="310" y="230" width="160" height="80" rx="10" fill="rgba(139,92,246,0.15)"/>
+  <text x="390" y="275" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="18" fill="#8b5cf6" text-anchor="middle">Output B</text>
+
+  <rect x="490" y="230" width="160" height="80" rx="10" fill="rgba(34,211,238,0.15)"/>
+  <text x="570" y="275" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="18" fill="#22d3ee" text-anchor="middle">Output C</text>
+
+  <text x="400" y="400" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="14" fill="#8b5cf6" text-anchor="middle">🧠 GEMINI MULTIMODAL API • TYPESCRIPT • TAILWIND</text>
+</svg>

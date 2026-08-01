@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050816"/>
+      <stop offset="50%" stop-color="#0d1527"/>
+      <stop offset="100%" stop-color="#050816"/>
+    </linearGradient>
+    
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(11, 17, 32, 0.85)"/>
+      <stop offset="100%" stop-color="rgba(19, 27, 46, 0.95)"/>
+    </linearGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 229, 255, 0.08)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bgGrad)" rx="30"/>
+  <rect width="800" height="800" fill="url(#grid)" rx="30"/>
+
+  <circle cx="200" cy="200" r="180" fill="#00e5ff" opacity="0.18"/>
+  <circle cx="600" cy="600" r="220" fill="#8b5cf6" opacity="0.18"/>
+
+  <circle cx="400" cy="380" r="260" fill="none" stroke="rgba(0, 229, 255, 0.2)" stroke-width="2" stroke-dasharray="10 15"/>
+  <circle cx="400" cy="380" r="220" fill="none" stroke="url(#primaryGrad)" stroke-width="3" opacity="0.4"/>
+  <circle cx="400" cy="380" r="180" fill="none" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1.5" stroke-dasharray="5 10"/>
+
+  <circle cx="400" cy="120" r="6" fill="#00e5ff"/>
+  <circle cx="620" cy="380" r="8" fill="#8b5cf6"/>
+  <circle cx="220" cy="480" r="5" fill="#00e5ff"/>
+
+  <polygon points="400,230 520,300 520,440 400,510 280,440 280,300" fill="url(#cardGrad)" stroke="url(#primaryGrad)" stroke-width="4"/>
+
+  <text x="400" y="375" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="95" fill="url(#primaryGrad)" text-anchor="middle" dominant-baseline="middle">MN</text>
+
+  <text x="320" y="310" font-family="monospace" font-weight="700" font-size="28" fill="rgba(0, 229, 255, 0.5)">&lt;/&gt;</text>
+  <text x="460" y="440" font-family="monospace" font-weight="700" font-size="24" fill="rgba(139, 92, 246, 0.6)">AI</text>
+
+  <rect x="180" y="570" width="440" height="75" rx="37.5" fill="rgba(11, 17, 32, 0.9)" stroke="rgba(0, 229, 255, 0.4)" stroke-width="2"/>
+  <text x="400" y="602" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="26" fill="#ffffff" text-anchor="middle">MUHAMMAD NOMAN</text>
+  <text x="400" y="628" font-family="'Poppins', sans-serif" font-weight="600" font-size="14" fill="#00e5ff" text-anchor="middle" letter-spacing="2">SENIOR AI WEB DEVELOPER &amp; UI DESIGNER</text>
+
+  <g transform="translate(140, 280)">
+    <rect width="130" height="42" rx="21" fill="rgba(5, 8, 22, 0.9)" stroke="#00e5ff" stroke-width="1.5"/>
+    <text x="65" y="26" font-family="'Poppins', sans-serif" font-weight="600" font-size="13" fill="#ffffff" text-anchor="middle">⚡ React &amp; AI</text>
+  </g>
+
+  <g transform="translate(530, 280)">
+    <rect width="130" height="42" rx="21" fill="rgba(5, 8, 22, 0.9)" stroke="#8b5cf6" stroke-width="1.5"/>
+    <text x="65" y="26" font-family="'Poppins', sans-serif" font-weight="600" font-size="13" fill="#ffffff" text-anchor="middle">🎨 UI Specialist</text>
+  </g>
+</svg>

@@ -669,6 +669,7 @@ img {
   object-fit: cover;
   border-radius: inherit;
   background: var(--bg-card);
+  display: block;
 }
 
 .floating-badge {

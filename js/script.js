@@ -284,35 +284,52 @@ function initAnimatedCounters() {
   const counters = document.querySelectorAll('.counter-number');
   if (!counters.length) return;
 
+  function animateCounter(counter) {
+    if (counter.classList.contains('animated')) return;
+    counter.classList.add('animated');
+
+    const target = parseInt(counter.getAttribute('data-target'), 10) || 0;
+    const suffix = counter.getAttribute('data-suffix') || '';
+    let count = 0;
+    const duration = 1500;
+    const step = Math.max(1, Math.floor(target / (duration / 20)));
+
+    const timer = setInterval(() => {
+      count += step;
+      if (count >= target) {
+        counter.textContent = `${target}${suffix}`;
+        clearInterval(timer);
+      } else {
+        counter.textContent = `${count}${suffix}`;
+      }
+    }, 20);
+  }
+
+  if (!('IntersectionObserver' in window)) {
+    counters.forEach(animateCounter);
+    return;
+  }
+
   const observer = new IntersectionObserver(
     (entries, obs) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          const counter = entry.target;
-          const target = parseInt(counter.getAttribute('data-target'), 10) || 0;
-          const suffix = counter.getAttribute('data-suffix') || '';
-          let count = 0;
-          const duration = 2000;
-          const step = Math.max(1, Math.floor(target / (duration / 20)));
-
-          const timer = setInterval(() => {
-            count += step;
-            if (count >= target) {
-              counter.textContent = `${target}${suffix}`;
-              clearInterval(timer);
-            } else {
-              counter.textContent = `${count}${suffix}`;
-            }
-          }, 20);
-
-          obs.unobserve(counter);
+          animateCounter(entry.target);
+          obs.unobserve(entry.target);
         }
       });
     },
-    { threshold: 0.5 }
+    { threshold: 0.1 }
   );
 
-  counters.forEach(c => observer.observe(c));
+  counters.forEach(c => {
+    const rect = c.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+      animateCounter(c);
+    } else {
+      observer.observe(c);
+    }
+  });
 }
 
 /* --------------------------------------------------------------------------
